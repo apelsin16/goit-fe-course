@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header {
+    text-align: justify;
+}
+
+.header::after {
+    display: inline-block;
+    content: "";
+    height: 0;
+    font-size: 0;
+    width: 100%;
+}
+
+.menu {
+    display: inline-block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.logo {
+    font-size: 30px;
+    color: #555252;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: middle;
+}
+
+.first-letter {
+    font-weight: 900;
+    color: rgb(26, 188, 156);
+}
+
+.menu-link {
+    margin-right: 34px; 
+    font-weight: 700;
+    color: #0f0101;
+}
+
+.menu-link:last-child {
+    margin-right: 0;
+}
+
+.menu-link:hover {
+    color: rgb(26, 188, 156);    
+}
+
+.section-title {
+    font-family: 'Roboto', sans-serif;
+    font-size: 48px;
+    color: #555252;
+    text-transform: uppercase;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.section-title::after {
+    content: "";
+    display: block;
+    background-color: rgb(26, 188, 156);
+    width: 170px;
+    height: 8px;
+    margin: 32px auto;
+}
+
+.product {
+    float: left;
+    background-color: #e9f0fd;
+    color: rgb(255, 255, 255);
+    font-family: "Roboto";
+    font-size: 18px;
+    font-weight: 700;
+    margin: 15px;
+}
+
+.product:hover .product-name {
+    background-color:rgb(26, 188, 156);
+}
+
+.product:hover .product-price {
+    background-color:#7fd9c7;
+}
+
+
+.product:nth-of-type(4n+1){
+    margin-left: 0;
+}
+.product:nth-of-type(4n) {
+    margin-right: 0;
+}
+
+.product-image {
+    width: 255px;
+    height: 282px;
+}
+
+.product-name {
+    float: left;
+    width: 200px;
+    padding: 5px 14px;
+    text-transform: uppercase;
+    background-color: #323232;
+}
+
+.product-price {
+    float: right;
+    width: 55px;
+    text-transform: uppercase;
+    background-color: #8c8c8c;
+    margin: 0 auto;
+    padding: 5px 14px;
+}
+
+
+  
+
+  
