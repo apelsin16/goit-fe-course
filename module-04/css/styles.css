@@ -69,6 +69,7 @@ a {
     color: #555252;
     text-transform: uppercase;
     text-align: center;
+    padding-top: 100px;
 }
 
 .section-title::after {
@@ -126,6 +127,65 @@ a {
     background-color: #8c8c8c;
     margin: 0 auto;
     padding: 5px 14px;
+}
+
+.article {
+    float: left;
+    width: 350px;
+    padding: 1rem;
+    margin: 15px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.article:first-of-type {
+    margin-left: 0px;
+}
+
+.article:last-of-type {
+    margin-right: 0px;
+}
+
+.article-image {
+    width: 100%;
+}
+
+.article-title {
+    
+    font-weight: 600;
+    font-size: 18px;
+    color: #555252;
+    
+}
+
+.article-title::after {
+    content: "";
+    display: block;
+    width: 136px;
+    height: 3px;
+    background-color: rgb(26, 188, 156);
+    margin-bottom: 29px;
+    margin-top: 10px;
+}
+
+.article-text {
+    
+    color: #555252;
+    height: 3.5rem;
+    overflow: hidden;
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+
+.article-link {
+    display: inline-block;
+    width: 160px;
+    height: 51px;
+    background-color: rgb(26, 188, 156);
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 51px;
+    text-align: center;
+    border-radius: 3px;
 }
 
 .clearfix::after {
