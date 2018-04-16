@@ -19,8 +19,8 @@ li {
 .header {
     width: 1110px;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 30px;
+    padding-bottom: 10px;
 }
 
 .navigation {
@@ -68,9 +68,14 @@ li {
     text-transform: uppercase;
     color: #0f0101;
     font-weight: 700;
+    font-size: 14px;
 }
 
 .menu-link:hover {
+    color: #1abc9c;
+}
+
+.active {
     color: #1abc9c;
 }
 
@@ -94,6 +99,7 @@ li {
     padding-top: 215px;
     padding-bottom: 270px;
     color: #ffffff;
+    position: relative;
 }
 
 .slider-title {
@@ -102,38 +108,40 @@ li {
     font-weight: 700;
     vertical-align: top;
     text-align: center;
-    position: relative;
+    /* position: relative; */
     margin: 0;
 }
 
-.slider-title::before {
-    content: "";
-    display: inline-block;
+.button-left {    
+    display: block;
     width: 105px;
     height: 105px;
     background-color: #1abc9c;
-    vertical-align: middle;
     position: absolute;
     left: 0;
+    top: 225px;
     background-image: url(../img/left-arrow.svg);
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
 }
 
-.slider-title::after {
-    content: "";
-    display: inline-block;
+.button-right {
+    display: block;
     width: 105px;
     height: 105px;
     background-color: #1abc9c;
-    vertical-align: middle;
     position: absolute;
     right: 0;
+    top: 225px;
     background-image: url(../img/right-arrow.svg);
     background-position: center;
     background-size: 50%;
     background-repeat: no-repeat;
+    border: 0;
+    cursor: pointer;
 }
 
 .slider-text {
@@ -228,6 +236,7 @@ li {
     left: 0;
     right: 0;
     height: 282px;
+    cursor: pointer;
 }
 
 .button-wrapper {
@@ -247,6 +256,7 @@ li {
     background-size: 50%;
     background-repeat: no-repeat;
     margin-left: 5px;
+    cursor: pointer;
     
 }
 
