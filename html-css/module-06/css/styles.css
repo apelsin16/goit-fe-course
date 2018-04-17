@@ -245,6 +245,7 @@ li {
 }
 
 .social-link {
+    display: block;
     width: 56px;
     height: 56px;
     border-right: 1px solid #f9bd87;
