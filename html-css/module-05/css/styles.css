@@ -25,14 +25,16 @@ li {
 
 .navigation {
     text-align: justify;
+    /* line-height: 0; */
 }
 
 .navigation::after {
     display: inline-block;
     content: "";
-    height: 0;
+  
     width: 100%;
-    font-size: 0;
+
+    line-height: 0;
 }
 
 .logo {
