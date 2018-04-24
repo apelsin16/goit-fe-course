@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'droid_serifitalic';
+    src: url('../fonts/droidserif-italic.woff') format('woff');  
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'robotoslab';
+    src: url('../fonts/robotoslab-regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wisdomscript';
+    src: url('../fonts/wisdomscript.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.header {
+    max-width: 87.5rem;
+    padding-top: 3.125rem;
+}
+
+.navigation {
+    max-width: 58.75rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-family: 'wisdomscript', serif;
+    font-size: 1.625rem;
+    color: #fed136;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu-item {
+    margin-right: 2.5rem;
+}
+
+.menu-link {
+    font-family: 'montserratbold', sans-serif;
+    font-size: 0.875rem;
+    text-transform: uppercase; 
+    color: #222222;
+}
+
+.menu-link:hover,
+.active {
+    color: #fed136;
+}
+
+.menu-item:last-child {
+    margin: 0;
+}
+
+.main {
+    max-width: 87.5rem;
+
+}
+
+.info {
+    max-width: 58.75rem;
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #222222;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'montserratbold';
+    padding-bottom: 1.25rem;
+}
+
+.section-text {
+    color: #777777;
+    text-align: center;
+    font-family: 'droid_serifitalic';
+    padding-bottom: 4.875rem;
+}
+
+.article-list   {
+    display: flex;
+    justify-content: space-around;
+}
+
+.article-title {
+    text-align: center;
+    font-family: 'montserratbold';
+    color: #222222;
+    font-size: 1.125rem;
+    padding-bottom: 1.25rem;
+}
+
+.article-title::before {
+    content: '';
+    display: block;
+    width: 4.75rem;
+    height: 4.75rem;
+    border: 0.1875rem solid #fed138;
+    margin: 0 auto;
+    border-radius: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 1.625rem;
+}
+
+.basket::before {
+    /* content: ''; */
+    background-image: url(../img/basket.png);   
+}
+
+.laptop::before {
+    background-image: url(../img/laptop.png);    
+}
+
+.locked::before {
+    background-image: url(../img/locked.png);
+}
+
+.article-text {
+    font-family: 'robotoslab';
+    font-size: 0.875rem;
+    text-align: center;
+    color: #777777;
+}
+
+.section-form {
+    padding-top: 6.875rem;
+    background-image: url(../img/bg.png);
+    background-color: #222222;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-bottom: 7.25rem;
+}
+
+.section-title_bottom {
+    color: #ffffff;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'montserratbold';
+    padding-bottom: 1.25rem;
+}
+
+.form {
+   max-width: 58.75rem;
+   margin: 0 auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+}
+
+.left-column {
+    display: flex;
+    flex-direction: column;
+}
+
+input,
+textarea {
+    font-family: 'montserratbold';
+    color: #777777;
+    padding: 1.125rem 1rem;
+    border: none;
+    border-radius: 0.2rem; 
+    font-size: 0.875rem;
+    width: 28.5rem;
+    margin-bottom: 1.75rem;
+}
+
+input[type=name]:valid,
+input[type=email]:valid {
+    outline: #00ff00 solid 2px;
+}
+
+input[type=name]:invalid,
+input[type=email]:invalid {
+    outline: #ff0000 solid 2px;
+}
+
+input[type=submit] {
+    width: 15rem;
+    height: 4.0625rem;
+    background-color: #fed136;
+    border: none;
+    padding: 0;
+    font-size: 1.125rem;
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+textarea {
+    resize: none;
+    margin-left: 1.75rem;
+}
+
+
+
