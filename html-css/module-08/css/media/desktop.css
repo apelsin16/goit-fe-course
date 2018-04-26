@@ -1,0 +1,22 @@
+@media (min-width: 1440px) {
+  .first-screen {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+      url(../../img/bg1440.jpg);
+  }
+  .wrap {
+    width: 58rem;
+    margin: 0 auto;
+  }
+  .first-screen-text {
+      font-size: 1.5rem;
+  }
+  .partner-list {
+      flex-wrap: nowrap;
+      width: 58rem;
+      justify-content: space-between;
+  }
+    /* .partner-card {
+        width: 17rem;
+    }  */
+
+}

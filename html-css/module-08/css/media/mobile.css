@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li {
+    list-style: none;
+}
+.first-screen {
+    background-image: url(../../img/bg320.jpg);
+    padding-top: 1.25rem;
+    padding-bottom: 8.625rem;
+    background-size: cover;
+}
+
+.registration {
+    text-align: center;
+    margin-bottom: 7.25rem;
+}
+
+.registration button {
+    border: 2px solid #ffffff;
+    background-color: inherit;
+    font-family: 'montserrat';
+    font-weight: bold;
+    color: #ffffff;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;    
+}
+
+.registration button:hover,
+.active {
+    border:  solid 2px transparent;
+    cursor: pointer;
+}
+
+
+
+h1 {
+    color: #ffffff;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.25rem;
+    margin-bottom: 2.375rem;
+}
+
+.slogan {
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 1.875rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 1.25rem;
+}
+
+.first-screen-text {
+    font-family: 'robotolight';
+    font-size: 1.125rem;
+    text-align: center;
+    color: #ffffff;
+    width: 13.5rem;
+    margin: 0 auto;
+    padding-bottom: 1.25rem;
+}
+
+.find {
+    display: block;
+    border: none;
+    background-color: #ff4e50;
+    color: #ffffff;
+    font-family: 'montserrat';
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.partners {
+    padding-top: 4.5rem;
+    padding-bottom: 3.625rem;
+}
+
+.section-title {
+    font-family: 'montserrat';
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.375rem;
+}
+
+.partner-list {
+    margin-bottom: 1rem;
+}
+
+.partner-card{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.image-wrap {
+    position: relative;
+
+}
+
+.image-wrap::after {
+    display: block;
+    content: "";
+    position: absolute;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    bottom: 0;
+    right: 50%;
+    transform: translate(150%, 0);
+    background-repeat: no-repeat;
+    background-position: 45% 45%;
+}
+
+.tv::after {
+    background-color: #ff4e50;
+    background-image: url(../../img/tv.png);    
+}
+
+.flask::after {
+    background-color: #ffa507;
+    background-image: url(../../img/flask.png);
+}
+
+.coffee::after {
+    background-color: #1cd7ad;
+    background-image: url(../../img/coffee.png);
+}
+
+.fly::after {
+    background-color: #4e73db;
+    background-image: url(../../img/fly.png);
+}
+
+.card-title {
+    text-align: center;
+    font-family: 'montserrat';
+    font-weight: bold;
+    font-size: 0.875rem;
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+}
+
+.card-text {
+    font-family: 'robotolight';
+    font-size: 0,875rem;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    color: #666666;
+}
+
+.see-partners {
+    display: block;
+    background-color: inherit;
+    border: 2px solid #ff4e50;
+    color: #ff4e50;
+    font-family: 'montserrat';
+    font-weight: bold;
+    padding: 1rem 3rem;
+    font-size: 0.875rem;
+    margin: 0 auto;
+    border-radius: 25px;
+    cursor: pointer;
+}
+

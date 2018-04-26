@@ -1,0 +1,69 @@
+@media (min-width: 768px) {
+    .first-screen {
+        display: flex;
+        background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(../../img/bg768.jpg);
+        flex-direction: column;
+        /* position: relative;    */
+        padding-top: 3rem;
+        padding-bottom: 15rem;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .wrap {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .registration {
+        align-self: flex-end;       
+        margin-bottom: 10rem;
+    }
+
+  
+    
+    .slogan {
+        width: 35rem;
+        font-size: 3.25rem;
+        margin: 0 auto;
+    }
+
+    .first-screen-text {
+        margin-top: 2.5rem;
+        margin-bottom: 2.375rem;
+        width: 25rem;
+    }
+
+    .section-title {
+        font-size: 1.375rem;
+    }
+
+    .partners {
+        padding-top: 4rem;
+    }
+
+    .partner-list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 30.75rem;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+    }
+
+    .partner-card {
+        width: 50%;
+    }
+
+    .card-text {
+        width: 100%;
+    }
+
+    .second-item,
+    .fourth-item {
+        order: 1;
+    }
+
+
+}
