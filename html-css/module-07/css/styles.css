@@ -52,6 +52,7 @@ a {
 .header {
     max-width: 87.5rem;
     padding-top: 3.125rem;
+    margin: 0 auto;
 }
 
 .navigation {
@@ -70,11 +71,11 @@ a {
 
 .menu {
     display: flex;
+    width: 480px;
+    justify-content: space-between;
 }
 
-.menu-item {
-    margin-right: 2.5rem;
-}
+
 
 .menu-link {
     font-family: 'montserratbold', sans-serif;
@@ -124,6 +125,11 @@ a {
     display: flex;
     justify-content: space-around;
 }
+
+.article-list-item {
+    margin: 0 10px;
+    flex-basis: 274px;
+    }
 
 .article-title {
     text-align: center;
@@ -201,6 +207,7 @@ a {
 .left-column {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
 }
 
 input,
@@ -212,7 +219,7 @@ textarea {
     border-radius: 0.2rem; 
     font-size: 0.875rem;
     width: 28.5rem;
-    margin-bottom: 1.75rem;
+    
 }
 
 input[type=name]:valid,
@@ -234,11 +241,13 @@ input[type=submit] {
     font-size: 1.125rem;
     margin-bottom: 0;
     cursor: pointer;
+    margin-top: 40px;
 }
 
 textarea {
     resize: none;
     margin-left: 1.75rem;
+    height: 210px;
 }
 
 
