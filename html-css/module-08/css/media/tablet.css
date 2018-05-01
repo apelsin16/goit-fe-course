@@ -54,6 +54,8 @@
 
     .partner-card {
         width: 50%;
+        flex-basis: 194px;
+        margin: 0 25px;
     }
 
     .card-text {

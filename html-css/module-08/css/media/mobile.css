@@ -19,7 +19,7 @@ li {
 }
 
 .registration button {
-    border: 2px solid #ffffff;
+    border: 2px solid transparent;
     background-color: inherit;
     font-family: 'montserrat';
     font-weight: bold;
@@ -31,7 +31,7 @@ li {
 
 .registration button:hover,
 .active {
-    border:  solid 2px transparent;
+    border:  solid 2px #ffffff;
     cursor: pointer;
 }
 
@@ -100,6 +100,7 @@ h1 {
 .partner-card{
     padding-top: 1rem;
     padding-bottom: 1rem;
+    max-width: 194px;
 }
 
 .card-image {
