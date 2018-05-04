@@ -95,6 +95,9 @@ h1 {
 
 .partner-list {
     margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .partner-card{

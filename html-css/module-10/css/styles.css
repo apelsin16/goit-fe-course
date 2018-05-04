@@ -1,0 +1,261 @@
+:root {
+    --first-color: #f38181;
+    --second-color: #fce38a;
+    --third-color: #eaffd0;
+    --fourth-color: #95e1d3;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.banner {
+    background-image: linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7)), url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  center;
+    color: #ffffff;
+    padding-bottom: 14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header {
+    font-family: 'montserratbold';
+    width: 75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.875rem;
+    color: #ffffff;
+}
+
+.logo:hover {
+    color: var(--second-color);
+}
+
+.menu {
+    width: 38.75rem;
+    display: flex;    
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.menu__link {
+    font-family: 'montserratbold';
+    text-transform: uppercase;
+    color: #ffffff;
+    border-bottom: 3px solid transparent;
+    font-size: 0.875rem;
+    padding-bottom: 0.75rem;
+
+
+}
+
+.menu__link:hover {
+    color: var(--second-color);
+    border-bottom: 3px solid var(--second-color);
+}
+
+.menu__icon {
+    width: 1.125rem;
+    height: 1.125rem;
+    fill: #ffffff;
+}
+
+.menu__icon:hover {
+    fill: var(--second-color);
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    fill: var(--first-color);
+}
+
+.icon:hover {
+    fill: var(--second-color);
+}
+
+.banner__title {
+    font-family: "kaushanscript";
+    font-size: 4.5rem;
+    margin-top: 10rem;;
+}
+
+.banner__greeting {
+    font-family: 'montserratbold';
+    font-size: 9.375rem;
+    text-transform: uppercase;
+    width: 54rem;
+    text-align: center;
+    margin: 0;
+    line-height: 0.9;
+}
+
+.banner__button {
+    color: #ffffff;
+    text-transform: uppercase;
+    border: 3px solid #ffffff;
+    background-color: inherit;
+    font-family: 'montserratbold';
+    padding: 0.75rem 0;
+    margin-top: 8rem;
+    width: 10rem;
+    cursor: pointer;    
+}
+
+.section {
+    padding-top: 3rem;
+    width: 75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.pretitle-text {
+    font-family: "kaushanscript";
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.section__title {
+    margin: 0;
+    font-family: 'montserratbold';
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.section__title::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--first-color);
+    margin: 0 auto;
+    margin-top: 2.5rem;
+}
+
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0;
+    justify-content: space-between;
+}
+
+.services__item {
+    flex-basis: 380px;
+    display: flex;
+}
+
+.services__item::before {
+    content: "";
+    flex-basis: 80px;
+    height: 80px;
+    background-position: center center;
+    background-size: 55%;
+    background-repeat: no-repeat;    
+}
+
+.clock::before {
+    background-image: url(../img/alarm-clock.svg);
+}
+
+.graph::before {
+    background-image: url(../img/marketing-line-graph.svg);
+}
+
+.monitor::before {
+    background-image: url(../img/checked-monitor.svg);
+}
+
+.book::before {
+    background-image: url(../img/open-book.svg);
+}
+
+.house::before {
+    background-image: url(../img/house-with-chimney.svg);
+}
+
+.frame::before {
+    background-image: url(../img/square-frame.svg);
+}
+
+.service {
+    /* display: flex; */
+    flex-basis: 300px;
+  
+}
+
+.service__title {
+    font-family: "montserratbold";
+    text-transform: uppercase;
+    color: #333333;
+}
+
+.service__text {
+    font-family: 'roboto';
+    color: #999999;
+}
+
+.section__text {
+    width: 60rem;
+    color: #999999;
+    text-align: center;
+}
+
+.team__list {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 100%;
+}
+
+.team__item {
+    flex-basis: 380px;
+}
+
+.member-card__image {
+
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-size: cover; 
+}
+
+.box1 {
+    background-image: url(../img/alarm-clock.svg);
+}
+
+.box2 {
+    background-image: url(../img/open-book.svg);
+}
+
+.box3 {
+    background-image: url(../img/marketing-line-graph.svg);
+}
+
+.box4 {
+    background-image: url(../img/house-with-chimney.svg);
+}
+
+.box5 {
+    background-image: url(../img/checked-monitor.svg);
+}
+
+.box6 {
+    background-image: url(../img/square-frame.svg);
+}
