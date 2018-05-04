@@ -25,6 +25,12 @@ li {
     align-items: center;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .banner {
+        background-image: linear-gradient(rgba(243, 129, 129, 0.7), rgba(252, 227, 138, 0.7)), url(../img/bg@2x.jpg);
+    }
+}
+
 .header {
     font-family: 'montserratbold';
     width: 75rem;
