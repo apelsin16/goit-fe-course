@@ -458,5 +458,6 @@ li {
     color: #ffffff;
     font-size: 0.875rem;
     padding: 0 2rem;
+    cursor: pointer;
 
 }
