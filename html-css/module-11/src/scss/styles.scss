@@ -1,0 +1,366 @@
+/*
+   Import partials below
+*/
+@import "normalize";
+@import "variables";
+@import "fonts";
+
+figure {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+li {
+  list-style: none;
+}
+
+.banner {
+  color: #ffffff;
+  background-image: linear-gradient(
+      rgba(243, 129, 129, 0.8),
+      rgba(252, 227, 138, 0.8)
+    ),
+    url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1rem;
+  padding-bottom: 14rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__button {
+    font-family: $montserratbold;
+    background-color: inherit;
+    border: 3px solid #ffffff;
+    color: #ffffff;
+    text-transform: uppercase;
+    padding: 0.75rem 1.75rem;
+    margin-top: 7.875rem;
+    cursor: pointer;
+  }
+  @media (-webkit-min-device-pixel-ratio: 2),
+    (-o-min-device-pixel-ratio: 2/1),
+    (min-resolution: 192dpi) {
+    background-image: linear-gradient(
+        rgba(243, 129, 129, 0.8),
+        rgba(252, 227, 138, 0.8)
+      ),
+      url(../img/bg@2x.jpg);
+  }
+}
+
+.header {
+  display: flex;
+  width: 75rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: $montserratbold;
+  font-size: 1.875rem;
+  &:hover {
+    color: $second-color;
+  }
+}
+
+.menu {
+  display: flex;
+  width: 38.75rem;
+  justify-content: space-between;
+  &__link {
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: $montserrat;
+    font-size: 0.875rem;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 0.75rem;
+    &:hover {
+      color: $second-color;
+      border-bottom: 3px solid $second-color;
+    }
+  }
+  &__icon {
+    width: 1rem;
+    height: 1rem;
+    fill: #ffffff;
+    &:hover {
+      fill: $second-color;
+    }
+  }
+}
+
+.title {
+  font-family: $kaushan;
+  font-size: 4.5rem;
+  margin-top: 10.5rem;
+}
+
+.greeting {
+  font-family: $montserratbold;
+  font-size: 9.375rem;
+  text-transform: uppercase;
+  text-align: center;
+  width: 52rem;
+  margin: 0;
+  margin-top: 2.625rem;
+}
+
+.services {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__item {
+    flex-basis: 33%;
+    display: flex;
+    &::before {
+      content: "";
+      background-position: center;
+      background-size: 65%;
+      background-repeat: no-repeat;
+      min-width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+}
+
+.clock::before {
+  background-image: url(../img/alarm-clock.svg);
+}
+
+.graph::before {
+  background-image: url(../img/marketing-line-graph.svg);
+}
+
+.monitor::before {
+  background-image: url(../img/checked-monitor.svg);
+}
+
+.book::before {
+  background-image: url(../img/open-book.svg);
+}
+
+.house::before {
+  background-image: url(../img/house-with-chimney.svg);
+}
+
+.frame::before {
+  background-image: url(../img/square-frame.svg);
+}
+
+.section {
+  color: #333333;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 75rem;
+  margin: 0 auto;
+  &__pre-title {
+    font-family: $kaushan;
+    font-size: 1.5rem;
+  }
+  &__title {
+    font-family: $montserratbold;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    &::after {
+      content: "";
+      display: block;
+      width: 3.75rem;
+      height: 0.1875rem;
+      background-color: $first-color;
+      margin: 0 auto;
+      margin-top: 2.625rem;
+    }
+  }
+  &__text {
+    text-align: center;
+    font-family: roboto;
+  }
+}
+
+.article {
+  margin-left: 0.875rem;
+  &__title {
+    font-family: $montserrat;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #333333;
+  }
+  &__text {
+    font-family: roboto;
+    font-size: #999999;
+  }
+}
+
+.team {
+  border-bottom: 1px solid #999999;
+  padding-bottom: 5.25rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__image-wrapper {
+    position: relative;
+    background-color: $fourth-color;
+    width: 23.75rem;
+    height: 29.375rem;
+  }
+  &__image {
+    // display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-property: top, left;
+    transition-duration: 0.2s;
+  }
+  &__effect {
+    opacity: 0;
+    background-image: linear-gradient(
+      rgba(243, 129, 129, 0.8),
+      rgba(252, 227, 138, 0.8)
+    );
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition-property: top, left, right, bottom;
+    transition-duration: 0.2s;
+    z-index: 1;
+    &:hover {
+      top: -10px;
+      left: -10px;
+      bottom: 10px;
+      right: 10px;
+      opacity: 1;
+    }
+  }
+  &__name {
+    font-family: $montserrat;
+    font-size: 0.875rem;
+    color: #333333;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__specialty {
+    font-family: $robotolit;
+    color: #999999;
+    text-align: center;
+  }
+}
+
+.team-member__image-wrapper:hover .team-member__image {
+  top: -10px;
+  left: -10px;
+  right: 10px;
+  bottom: 10px;
+}
+
+.team__list {
+  display: flex;
+  width: 75rem;
+  justify-content: space-between;
+  margin-top: 5.75rem;
+}
+
+.socials {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &__link {
+    display: block;
+    position: relative;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: $second-color;
+    border-right: 1px solid $first-color;
+    &:hover {
+      background-color: $first-color;
+    }
+    &:hover .socials__icon {
+      fill: #ffffff;
+    }
+  }
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    fill: $first-color;
+    &:hover {
+      fill: #ffffff;
+    }
+  }
+}
+
+.instagram {
+  border-right: 0;
+}
+
+.footer {
+  display: flex;
+  width: 75rem;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.copyright {
+  font-family: $montserrat;
+  font-size: 0.875rem;
+  color: #333333;
+  span {
+    color: $first-color;
+  }
+}
+
+.form {
+  display: flex;
+  &__email {
+    font-family: $robotolit;
+    color: #cccccc;
+    padding-left: 1rem;
+    width: 14.25rem;
+    // border-right: 0;
+  }
+  &__button {
+    font-family: $montserratbold;
+    color: #ffffff;
+    font-size: 0.875rem;
+    background-color: $fourth-color;
+    border: none;
+    width: 9.375rem;
+  }
+}
+
+.input {
+  display: block;
+  box-sizing: border-box;
+  height: 2.5rem;
+}
