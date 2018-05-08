@@ -173,11 +173,13 @@ li {
   &__pre-title {
     font-family: $kaushan;
     font-size: 1.5rem;
+    margin: 0;
   }
   &__title {
     font-family: $montserratbold;
     font-size: 1.875rem;
     text-transform: uppercase;
+    
     &::after {
       content: "";
       display: block;
